@@ -1,0 +1,13 @@
+{
+    "name": "midfusion Dev Container",
+    "dockerComposeFile": "docker-compose.yml",
+    "service": "midfusion",
+    "workspaceFolder": "/volume",
+    "shutdownAction": "stopCompose",
+    "extensions": [
+		"ms-vscode.cpptools",
+		"ms-vscode.cmake-tools",
+		"mutantdino.resourcemonitor",
+		"ms-python.python"
+	]
+}

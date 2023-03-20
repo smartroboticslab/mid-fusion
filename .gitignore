@@ -1,0 +1,9 @@
+apps/kfusion/build/
+apps/kfusion/Release/
+apps/kfusion/cmake-build-debug/
+apps/kfusion/TooN/
+apps/kfusion/scripts/results/
+apps/kfusion/scripts/*.pyc
+apps/kfusion/test/tracking/CMakeFiles/
+apps/kfusion/test/preprocessing/CMakeFiles/
+apps/kfusion/test/tracking/Makefile
