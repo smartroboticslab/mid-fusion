@@ -1,4 +1,4 @@
-# MID-Fusion [[![build](https://github.com/binbin-xu/mid-fusion/workflows/build/badge.svg)](https://github.com/binbin-xu/mid-fusion/actions)]
+# MID-Fusion [[![build](https://github.com/smartroboticslab/mid-fusion/workflows/build/badge.svg)](https://github.com/smartroboticslab/mid-fusion/actions)]
 
 This repository contains MID-Fusion: a new multi-instance dynamic RGBD SLAM system using an object-level octree-based volumetric representation.
 
@@ -50,7 +50,7 @@ We bundle a [Visual Studio Code development container](https://code.visualstudio
 
 
 ### Dependency
-If you meet any dependency issue in compiling, please refer to [github action file](https://github.com/binbin-xu/mid-fusion/blob/master/.github/workflows/main.yml) or [report an issue](https://github.com/binbin-xu/mid-fusion/issues).
+If you meet any dependency issue in compiling, please refer to [github action file](https://github.com/smartroboticslab/mid-fusion/blob/master/.github/workflows/main.yml) or [report an issue](https://github.com/smartroboticslab/mid-fusion/issues).
 
 
 ### Demo:
@@ -74,7 +74,7 @@ The data used to run those bash can be downloaded via [this link](https://drive.
 
 ### Customised settings:
 
-  RGB-D sequences need to be given in the SLAMBench 1.0 file format (https://github.com/pamela-project/slambench). Then you can run our modified Mask RCNN script (check [this repo](https://github.com/binbin-xu/maskrcnn_for_midfusion)) to generate masks, classes, and semantic probability in cnpy format. You may need to tune some parameters in the [file](https://github.com/binbin-xu/mid-fusion/blob/master/apps/kfusion/include/default_parameters.h) and parse them as arguments for your own sequences.
+  RGB-D sequences need to be given in the SLAMBench 1.0 file format (https://github.com/pamela-project/slambench). Then you can run our modified Mask RCNN script (check [this repo](https://github.com/binbin-xu/maskrcnn_for_midfusion)) to generate masks, classes, and semantic probability in cnpy format. You may need to tune some parameters in the [file](https://github.com/smartroboticslab/mid-fusion/blob/master/apps/kfusion/include/default_parameters.h) and parse them as arguments for your own sequences.
 
   Notice: We used the [tensorpack-version Mask RCNN](https://github.com/tensorpack/tensorpack/tree/master/examples/FasterRCNN) to generate object masks in our original work. However, the Mask RCNN system we used at that time is obsolete and cannot be run any more due to the tensorflow update. Here we provide a [maskrcnn-benchmark](https://github.com/binbin-xu/maskrcnn_for_midfusion) version for usage. We did not finetune either of those versions, but the results would be much improved with a better/more suited segmentation mask. Therefore if you want to increase performance in your specific domain, please **consider training a network on your data**. 
 
