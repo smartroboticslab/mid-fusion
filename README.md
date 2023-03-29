@@ -1,4 +1,4 @@
-# MID-Fusion [[![build](https://github.com/smartroboticslab/mid-fusion/workflows/build/badge.svg)](https://github.com/smartroboticslab/mid-fusion/actions)]
+# MID-Fusion
 
 This repository contains MID-Fusion: a new multi-instance dynamic RGBD SLAM system using an object-level octree-based volumetric representation.
 
